@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="h1_container">
+                <h1 class="main_title">Дни открытых<br />дверей колледжа<br />туран</h1>
+            </div>
+            <div class="cards_container">
+                <div id="open_model1" class="card">
+                    <div>
+                        <h2 class="card_h2">25 Апреля</h2>
+                        <h3 class="card_h3">12:00 - 14:00</h3>
+                    </div>
+                    <h4 class="card_h4">Улица Каныша Сатпаева, 16а</h4>
+                </div>
+                <div id="open_model2" class="card">
+                    <div>
+                        <h2 class="card_h2">25 Апреля</h2>
+                        <h3 class="card_h3">12:00 - 14:00</h3>
+                    </div>
+                    <h4 class="card_h4">Улица Каныша Сатпаева, 16а</h4>
+                </div>
+                <div id="open_model3" class="card">
+                    <div>
+                        <h2 class="card_h2">25 Апреля</h2>
+                        <h3 class="card_h3">12:00 - 14:00</h3>
+                    </div>
+                    <h4 class="card_h4">Улица Каныша Сатпаева, 16а</h4>
+                </div>
+            </div>
+        </section>
+        <div id="modal" class="modal">
+            <div class="reg_window">
+                <div id="close_btn" class="close_btn">X</div>
+
+                <form class="reg_window" action="#" name="submit-to-google-sheet">
+
+                    <div class="input_conteiner">
+
+                        <input name="FIO" autocomplete="off" id="FIO" class="input" type="text" placeholder="ФИО"
+                            required>
+
+                        <input name="Number" autocomplete="off" id="Number" class="input" type="text"
+                            placeholder="Номер телефона" required>
+
+
+                    </div>
+
+                    <div class="button_container">
+
+                        <button id="reg_btn" type="submit" class="reg_btn">зарегестрироваться</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <script src="./js/googleSheets.js"></script>
+    <script defer src="./js/main.js"></script>
+
+</body>
+
+</html>

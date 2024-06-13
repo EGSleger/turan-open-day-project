@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Intro';
+    src: local("Intro"),
+        url('../fonts/4488-font.otf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: local("Roboto_regular"),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: local("Roboto_medium"),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_bold';
+    src: local("Roboto_bold"),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto_black';
+    src: local("Roboto_black"),
+        url('../fonts/Roboto-Black.ttf') format('truetype');
+
+}
+
+main {
+    width: 380px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_title {
+    font-family: 'Intro';
+    margin-top: 3vh;
+    padding: 0;
+    font-size: 28px;
+    color: #02A4FF;
+    text-align: center;
+    line-height: 1;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card {
+    width: 340px;
+    height: 116px;
+    background-color: #02A4FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:active {
+    background: #fff;
+    color: #02A4FF;
+    border: 1px, #02A4FF, solid;
+    transform: scale(1.0);
+}
+
+.card:active * {
+    color: #02A4FF;
+}
+
+.card_h2 {
+    color: white;
+    font-size: 28px;
+    font-family: 'Roboto_medium';
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.card_h3 {
+    color: #fff;
+    font-family: 'Roboto_bold';
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 1vh;
+}
+
+.card_h4 {
+    color: #fff;
+    font-family: 'Roboto_regular';
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.reg_window {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #999;
+    background-color: white;
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.input_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.input {
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    border-radius: 48px;
+}
+
+.input::placeholder {
+    font-family: 'Roboto_regular';
+    color: #02A4FF;
+    text-align: center;
+}
+
+.input:active {
+    font-family: 'Roboto_regular';
+    color: #02A4FF;
+    text-align: center;
+}
+
+input {
+    font-family: 'Roboto_regular';
+    color: #02A4FF;
+    text-align: center;
+}
+
+.reg_btn {
+    width: 220px;
+    height: 40px;
+    background-color: #02A4FF;
+    color: white;
+    font-family: 'Roboto_black';
+    font-size: 14px;
+    border-radius: 48px;
+    transition: 0.3s ease;
+}
+
+.reg_btn:active {
+    transform: scale(1.1);
+}
+
+.close_btn {
+    position: absolute;
+    top: 7%;
+    left: 85%;
+    font-family: 'Roboto_medium';
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #02A4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.close_btn:active {
+    transform: scale(1.1);
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
