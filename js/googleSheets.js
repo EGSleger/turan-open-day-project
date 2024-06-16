@@ -7,15 +7,15 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbymHzVE-YSounyfP0L6xh
         let clickedCardData = null;
 
         openModelCard1.addEventListener('click', () => {
-            clickedCardData = 'Card 1';
+            clickedCardData = '25 апреля';
         });
 
         openModelCard2.addEventListener('click', () => {
-            clickedCardData = 'Card 2';
+            clickedCardData = '16 мая';
         });
 
         openModelCard3.addEventListener('click', () => {
-            clickedCardData = 'Card 3';
+            clickedCardData = '9 июня';
         });
 
         form.addEventListener('submit', e => {
